@@ -31,10 +31,12 @@ require("connection.php");
 			$stored_status_result = mysqli_query($conn, $stored_status_query);
 			$stored_status_info = mysqli_fetch_assoc($stored_status_result);
 
-			$date = date("F jS, Y",  strtotime($summary['timestamp']));
 
-			
+			$date = gmdate("F jS, Y",  strtotime($summary['timestamp']."UTC"));
 
+			$serverdate = $summary['timestamp'];
+			date_default_timezone_set("Asia/Manila");
+			$local_datetime = date("F jS, Y g:i a", strtotime($serverdate."UTC"));
 		?>
 
 		<div class="col-md-8">
@@ -54,7 +56,7 @@ require("connection.php");
 				<div class="card-body">
 				<h2><?php echo $stored_status_info['term']; ?> </h2>
 				<h6>Based on your submitted responses you are a <?php echo $stored_status_info['definition']; ?></h6>
-				<small><?php echo date("F jS, Y g:i a", strtotime($summary['timestamp'])); ?></small>
+				<small><?php echo $local_datetime ?></small>
 				<hr>
 				<h4>Recommendation:</h4>
 				<ul class="list-group">
