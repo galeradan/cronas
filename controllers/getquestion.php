@@ -205,13 +205,28 @@ require("connection.php");
 					
 				}
 				else{
+					// echo "Something's wrong";
+					// echo mysqli_error($conn);
+				}
+			}else{
+				$status_id = $_SESSION['statusID'];
+				$insertGuest_query = "INSERT INTO guest(session_id, status_id) VALUES ('$session_id', $status_id);";
+
+				$summaryGuest_result =mysqli_query($conn, $insertGuest_query);
+
+				if($summaryGuest_result){
+					// echo "Successfully saved to database";
+					// Reset Values
+					// Reset Session Variables
+					//destroy session
+					session_regenerate_id();
+					session_destroy();
+				}
+				else{
 					echo "Something's wrong";
 					echo mysqli_error($conn);
 				}
-			}else{
-				// Reset Session Variables
-				//destroy session
-				session_destroy();
+				
 			}
 		?>
 		<!-- end of inserting info to database -->
