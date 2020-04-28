@@ -8,7 +8,7 @@ require("connection.php");
  		$user_info = $_SESSION['user'];
  		$user_id = $user_info['id'];
 
- 		$summary_query = "SELECT status.term as term, status.definition as definition, COUNT(DISTINCT session_id) as count FROM summary RIGHT JOIN status ON summary.status_id=status.id Group by status.term Order By count desc;";
+ 		$summary_query = "SELECT status.term as term, status.definition as definition, COUNT(DISTINCT session_id) as count FROM summary RIGHT JOIN status ON summary.status_id=status.id Group by status.term, status.definition Order By count desc;";
  		$summary_array = mysqli_query($conn, $summary_query);
 
 
