@@ -22,10 +22,14 @@ function getTitle(){
 ?>
 
 
-<div class="row d-flex align-items-center ">
-			<div class="col-md-6 mx-auto">
+		<div class="row justify-content-center">
+			<div class="col-md-4 order-1 justify-content-center">
+				<img src="../assets/images/svg4.svg" class="img-fluid img-max-h">
+			</div>
+			<div class="col-md-5 order-sm-1 d-flex flex-column justify-content-center">
 				<!-- <div class="card card-styling">
 					<div class="card-body"> -->
+
 						<h1 class="card-title font-accent">Uh-oh!</h1>
 						<div id="alert" class="alert alert-warning" role="alert">
 							  <strong><?php echo $_SESSION['erroMsg']; ?></strong> 
@@ -40,8 +44,28 @@ function getTitle(){
 							</li>
 
 						</ul>
+					<!-- </div>
+				</div> -->
+
+				
+				
+				<!-- <div class="form-group text-right">
+					<button type="submit" class="btn btn-styling bg-accent font-neutralw">Guest</button>
+				</div> -->
 			</div>
 		</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

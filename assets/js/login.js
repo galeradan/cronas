@@ -26,11 +26,11 @@ $(document).ready(function(){
 
 		    if (email == "" || password == "" ) {
 		    	++error;
-		    	console.log(error + "errors");
+		    	// console.log(error + "errors");
 		    	$("#alert").show();
 		    }else{
 		   		$("#authlogin").submit();
-		   		console.log(error + " no errors");
+		   		// console.log(error + " no errors");
 		   		$("#alert").hide();
 		   		
 		    }

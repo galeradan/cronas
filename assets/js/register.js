@@ -8,6 +8,7 @@ $(document).ready(function(){
 		var password;
 		var confirm;
 		var alert;
+		var validatedEmail;
 		var error = 0;
 
 		$("#alert").hide();
@@ -23,25 +24,31 @@ $(document).ready(function(){
 		    password = $("#password").val();
 		    confirm = $("#confirm").val();
 
-		    console.log(fname);
-		    console.log(lname);
-		    console.log(age);
-		    console.log(email);
-		    console.log(password);
-		    console.log(confirm);
 
-		    if (fname == "" || lname == "" || age == "" || email == "" || username == "" || password == "" || confirm == "" ) {
+		    function ValidateEmail(mail) 
+		    {
+		     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+		      {
+		        return (true)
+		      }
+		        return (false)
+		    }
+
+		    validatedEmail = ValidateEmail(email);
+		    // console.log(validatedEmail);
+
+		    if (fname == "" || lname == "" || age == "" || email == "" || validatedEmail == false || username == "" || password == "" || confirm == "" ) {
 		    	++error;
-		    	console.log(error + "errors");
+		    	// console.log(error + "errors");
 		    	$("#alert").show();
 		    }else{
 		    	if (password === confirm) {
 		    		$("#registerForm").submit();
-		    		console.log(error + " no errors");
+		    		// console.log(error + " no errors");
 		    		$("#alert").hide();
 		    	}else{
 		    		$("#alert").show();
-		    		console.log(error + "errors");
+		    		// console.log(error + "errors");
 		    	}
 		    }
 		});
