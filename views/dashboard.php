@@ -52,7 +52,7 @@ function getTitle() {
 		<div class="col-md-9">
 		<!-- <hr> -->
 			<h5 class="mb-0 d-inline">Usage Overview: </h5>
-			<span class="align-text-bottom"><small>Total count of users and their latest status</small></span>
+			<span class="align-text-bottom"><small>See the overall general usage of the app</small></span>
 			<hr class="mt-1">
 		</div>
 	</div>
