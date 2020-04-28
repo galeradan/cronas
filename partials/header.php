@@ -52,7 +52,7 @@
 	  		
 	  			  <a class="nav-brand">
 		  			<?php if ($currentPage == "screener"): ?>
-		  				<?php echo "Unknown | <small>Guest</small>"; ?>
+		  				<?php echo "Anonymous User | <small>Guest</small>"; ?>
 		  			<?php endif ?>
 	  			  </a>
 	  	
