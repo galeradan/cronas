@@ -27,7 +27,7 @@ require("connection.php");
 				<h1><?php echo $summary['count']; ?></h1>
 				<h4 class="card-title"><?php echo $summary['term'] ?></h4>
 				<hr>
-				<small>Total Number of users under</small>
+				<small>Total number of registered users under</small>
 				<h6 class="card-sub-title text-muted"><?php echo $summary['definition']; ?></h6>
 			</div>
 		</div>
