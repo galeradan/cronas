@@ -37,7 +37,7 @@ function getTitle() {
 	<div class="row d-flex justify-content-center align-items-stretch">
 		<div class="col-md-9">
 			<h5 class="mb-0 d-inline">Status Overview: </h5>
-			<span class="align-text-bottom"><small>Total count of users according to their latest status</small></span>
+			<span class="align-text-bottom"><small>Total count of registered users according to their latest status</small></span>
 			<hr class="mt-1">
 		</div>
 	</div>
