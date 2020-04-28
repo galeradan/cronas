@@ -83,14 +83,14 @@ body {
 .home{
 	margin: -19px -15px -16px -15px;
 	background: 
-		linear-gradient(
+	/*	linear-gradient(
 				hsla(0, 0%, 0%, 0.8),
 				hsla(0, 0%, 0%, 0.8),
 				hsla(0, 0%, 0%, 0.8)
-			),
-		url("../images/bg1.jpg") top left no-repeat;
+			),*/
+		url("../images/wave.svg") bottom no-repeat;
 	background-size: cover;
-	background-position: center 55%;
+	background-position: right 55%;
 	/*background-attachment: fixed;*/
 	/*display: none;*/
 }
@@ -232,3 +232,38 @@ body {
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
+
+
+/* #Tablet (Portrait)*/
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+		.v-center{
+			position: absolute;
+			top: 50%;
+			left: 53%;
+			transform: translate(-50%,-50%);
+		}
+    }
+
+/*  #Mobile (Portrait) */
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+			
+		.home{
+			margin: -19px -15px -16px -15px;
+			background: 
+				/*linear-gradient(
+						hsla(10, 0%, 0%, 0.1),
+						hsla(10, 0%, 0%, 0.8),
+						hsla(10, 0%, 0%, 0.8)
+					),*/
+				url("../images/wavenull.svg") bottom no-repeat;
+			background-size: cover;
+			background-position: center 55%;
+			/*background-attachment: fixed;*/
+			/*display: none;*/
+		}
+    }
