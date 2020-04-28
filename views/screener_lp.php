@@ -21,7 +21,7 @@ function getTitle(){
 
 						<h2 class="card-title font-base">Hello!</h2>
 						<h4 class="card-sub-title mt-3">To start screening, you have the following options:</h4>
-						<ul class="list-group text-center">
+						<ul class="list-group">
 							<li class="list-group-item">
 								<p class="text-muted m-0">Would you like to create an account? <a href="./register.php">Register here</a></p>
 							</li>
@@ -31,7 +31,7 @@ function getTitle(){
 
 						</ul>
 						
-						<hr>
+						<hr class="mb-0 mt-2">
 						<div class="form-group text-center">
 						<small class="text-muted">Notice: Guest users can't retrieve their results.</small>
 							<button id="btnGuest" type="button" class="btn bg-accent font-neutralw btn-styling btn-block">Continue Screening as Guest</button>

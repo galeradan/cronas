@@ -13,6 +13,8 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="icon" type="image/png" href="../assets/images/favicon.png">
 	<title>CronaS | <?php echo getTitle(); ?></title>
 
 	<!-- Google fonts -->
@@ -28,7 +30,10 @@
 
 
 	<nav class="navbar navbar-expand-lg nav-styling navbar-light bg-neutral fixed-top">
-	  <a class="navbar-brand" id="logo" href="./home.php"><strong>CronaS</strong></a>
+	  <a class="navbar-brand" id="logo" href="./home.php">
+	  	<img src="../assets/images/favicon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+	  	<strong>CronaS</strong>
+	  </a>
 	  <?php if (isset($_SESSION['user'])): ?>
 	  			
 	  			  <a class="nav-brand">
