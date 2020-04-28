@@ -10,10 +10,9 @@
 
 	          <div class="col-md-4">
 	            <h6 class="footer-h6"><strong>About CronaS</strong></h6>
-	            <p>
-	              <small class="footer-small">CronaS is a COVID-19 Screening Tool developed to help frontliners fight during this pandemic</small>
+	            <p class="mb-0">
+	              <small class="footer-small">CronaS is a COVID-19 Screening Tool developed to help frontliners fight during this pandemic. The algorithm is based on Port of Entry of <a href="https://www.doh.gov.ph/sites/default/files/Updated_Decision_Tool_March_16.pdf">DOH's updated decision tool as of March 16, 2020.</a></small>
 	            </p>
-	  
 	          </div>
 
 	    
