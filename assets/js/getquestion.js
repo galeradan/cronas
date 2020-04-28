@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 		    if (last == false) {
 		    	var chosenID = $("input[name='choices']:checked").val();
-		    	console.log(chosenID);
+		    	// console.log(chosenID);
 		    	if (chosenID != null) {
 		    		$.ajax({
 		    		    url:'../controllers/getquestion.php',
@@ -24,7 +24,7 @@ $(document).ready(function(){
 		    		    		// console.log(response);
 		    		       	    $('#question-receiver').html(response);
 		    		       	    $("#alert").hide();
-		    		       	    console.log("question lenth: " + $( "#question" ).length);
+		    		       	    // console.log("question lenth: " + $( "#question" ).length);
 
 		    		       	    if ($( "#question" ).length) {
 
@@ -51,7 +51,8 @@ $(document).ready(function(){
 		    		$("#alert").show();
 		    	}
 		    }else{
-		    	console.log("close ko na");
+		    	// console.log("close ko na");
+		    	window.location.href = "../views/home.php";
 		    }
 
 		    
