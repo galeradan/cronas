@@ -233,6 +233,13 @@ body {
 	padding-right: 10px;
 }
 
+.thead-styling{
+	box-shadow: 0px 0px 4px 0px hsla(0, 0%, 0%, 0.2);	
+	text-overflow: ellipsis; 
+	width: 100%;
+	/*border: 1px solid #000000;*/
+	/*margin-bottom: 10px;*/
+}
 
 
 /* #Tablet (Portrait)*/

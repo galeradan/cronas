@@ -62,6 +62,20 @@ function getTitle() {
 	</div>
 
 
+	<div class="row mt-2 d-flex justify-content-center align-items-stretch">
+		<div class="col-md-9">
+		<!-- <hr> -->
+			<h5 class="mb-0 d-inline">Results Lists: </h5>
+			<span class="align-text-bottom"><small>List of active users with their status</small></span>
+			<hr class="mt-1">
+		</div>
+	</div>
+	
+	<div id="result-receiver" class="row d-flex justify-content-center ">
+		<?php require('../controllers/getdashboard_users.php'); ?> 
+	</div>
+
+
 
 
 
