@@ -16,10 +16,14 @@ require("connection.php");
  	$x = 0;
 
 ?>
-	
+
+
+<!-- <div class="col-md-9 d-flex align-items-stretch">
+	<input id="searchTable" class="form-control mr-sm-2" type="search" placeholder="Search name or status" aria-label="Search">
+</div> -->
 <div class="col-md-9 d-flex align-items-stretch">
 
-	<table class="table text-center table-striped">
+	<table class="table text-center">
 	  <thead class="thead-styling">
 	    <tr>
 	      <th scope="col">#</th>
@@ -28,7 +32,7 @@ require("connection.php");
 	      <th scope="col">Current Status</th>
 	    </tr>
 	  </thead>
-	  <tbody>
+	  <tbody id="resultTable" >
 
 <?php foreach ($usersSummary_array as $users): ?>
 		    <tr>
@@ -42,3 +46,7 @@ require("connection.php");
 	</table>
 </div>
 
+
+
+<!-- External Script -->
+<!-- <script type="text/javascript" src="../assets/js/getdashboard_searchuser.js"></script> -->

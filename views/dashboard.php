@@ -68,6 +68,7 @@ function getTitle() {
 			<h5 class="mb-0 d-inline">Results Lists: </h5>
 			<span class="align-text-bottom"><small>List of active users with their status</small></span>
 			<hr class="mt-1">
+			<input id="searchTable" class="form-control mr-sm-2" type="search" placeholder="Search name or status" aria-label="Search">
 		</div>
 	</div>
 	
@@ -75,16 +76,10 @@ function getTitle() {
 		<?php require('../controllers/getdashboard_users.php'); ?> 
 	</div>
 
-
-
-
-
-
-
 <?php 
 require_once('../partials/footer.php');
 ?>
 
 
 <!-- External Script -->
-<script type="text/javascript" src="../assets/js/profile_screener.js"></script>
+<script type="text/javascript" src="../assets/js/getdashboard_searchuser.js"></script>
