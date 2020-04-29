@@ -22,7 +22,7 @@ require("connection.php");
 	<input id="searchTable" class="form-control mr-sm-2" type="search" placeholder="Search name or status" aria-label="Search">
 </div> -->
 <div class="col-md-9 d-flex align-items-stretch">
-
+  <div class="table-responsive">
 	<table class="table text-center">
 	  <thead class="thead-styling">
 	    <tr>
@@ -46,6 +46,7 @@ require("connection.php");
 <?php endforeach ?>
 	  </tbody>
 	</table>
+  </div>
 </div>
 
 
