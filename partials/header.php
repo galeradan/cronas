@@ -34,29 +34,7 @@
 	  	<img src="../assets/images/favicon.png" width="30" height="30" class="d-inline-block align-top" alt="">
 	  	<strong>CronaS</strong>
 	  </a>
-	  <?php if (isset($_SESSION['user'])): ?>
-	  			
-	  			  <a class="nav-brand">
-	  				  	<?php 
-	  				  		$name = $_SESSION['user']['first_name'] . " " . $_SESSION['user']['last_name'];
-
-	  				  		if ($_SESSION['user']['role_id'] == 1){
-	  				  			echo "$name | <small>Admin</small>";
-	  				  		}
-	  				  		else{
-	  				  			echo "$name | <small>Regular</small>";
-	  				  		}
-	  				  	?>
-	  			  </a>		
-	  	<?php else: ?>
-	  		
-	  			  <a class="nav-brand">
-		  			<?php if ($currentPage == "screener"): ?>
-		  				<?php echo "Anonymous User | <small>Guest</small>"; ?>
-		  			<?php endif ?>
-	  			  </a>
-	  	
-	  	<?php endif ?>
+	 
 
 
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +48,29 @@
 	  		
 	  		
 	  		 
+	  		  <?php if (isset($_SESSION['user'])): ?>
+	  		  			
+	  		  			  <a class="nav-brand">
+	  		  				  	<?php 
+	  		  				  		$name = $_SESSION['user']['first_name'] . " " . $_SESSION['user']['last_name'];
 
+	  		  				  		if ($_SESSION['user']['role_id'] == 1){
+	  		  				  			echo "$name | <small>Admin</small>";
+	  		  				  		}
+	  		  				  		else{
+	  		  				  			echo "$name | <small>Regular</small>";
+	  		  				  		}
+	  		  				  	?>
+	  		  			  </a>		
+	  		  	<?php else: ?>
+	  		  		
+	  		  			  <a class="nav-brand">
+	  			  			<?php if ($currentPage == "screener"): ?>
+	  			  				<?php echo "Anonymous User | <small>Guest</small>"; ?>
+	  			  			<?php endif ?>
+	  		  			  </a>
+	  		  	
+	  		  	<?php endif ?>
 	  		
 
 	  			

@@ -44,14 +44,15 @@ function getTitle() {
 
 
 
-<!-- External Script -->
-<script type="text/javascript" src="../assets/js/goscreen_profile.js"></script>
+
 
 
 <?php 
 require_once('../partials/footer.php');
 ?>
 
+<!-- External Script -->
+<script type="text/javascript" src="../assets/js/goscreen_profile.js"></script>
 
 <!-- External Script -->
-<script type="text/javascript" src="../assets/js/profile_screener.js"></script>
+<!-- <script type="text/javascript" src="../assets/js/profile_screener.js"></script> -->
