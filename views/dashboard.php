@@ -76,6 +76,7 @@ function getTitle() {
 		<?php require('../controllers/getdashboard_users.php'); ?> 
 	</div>
 
+
 <?php 
 require_once('../partials/footer.php');
 ?>
