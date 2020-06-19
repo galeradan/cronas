@@ -25,6 +25,9 @@ function getTitle() {
 
 
 
+
+
+
 	<div class="row d-flex justify-content-center align-items-stretch">
 		<div class="col-md-9">
 			<h2>DASHBOARD</h2>
@@ -84,3 +87,4 @@ require_once('../partials/footer.php');
 
 <!-- External Script -->
 <script type="text/javascript" src="../assets/js/getdashboard_searchuser.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>

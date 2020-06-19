@@ -17,6 +17,10 @@
 	<link rel="icon" type="image/png" href="../assets/images/favicon.png">
 	<title>CronaS | <?php echo getTitle(); ?></title>
 
+	<meta property="og:title" content="CronaS" />
+	<meta property="og:description" content="CronaS is a COVID-19 Screening Tool developed to help frontliners fight during this pandemic." />
+	<meta property="og:image" content="https://i.ibb.co/wrV9MFR/cronas.png" />
+
 	<!-- Google fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
 
@@ -25,6 +29,8 @@
 	
 	<!-- external stylesheet -->
 	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+
 </head>
 <body>
 

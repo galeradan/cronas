@@ -23,7 +23,7 @@ require("connection.php");
 </div> -->
 <div class="col-md-9 d-flex align-items-stretch">
   <div class="table-responsive">
-	<table class="table text-center">
+	<table  id="dashboardTable" class="table text-center">
 	  <thead class="thead-styling">
 	    <tr>
 	      <th scope="col">#</th>
