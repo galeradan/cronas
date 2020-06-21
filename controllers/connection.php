@@ -20,7 +20,7 @@
 	if(!$conn){
 		//calls mysqli_error(); returns a string description of the last error message
 		// die('message') prnts a message and exits the php script
-		die ('connection failed: ' . mysqli_error($conn) . "The Free DB is not responsing anymore");
+		die ('connection failed: ' . mysqli_error($conn) . "Looks like there's a problem with remotemysql");
 	}else{
 		// var_dump('Successfully connected....');
 	}
